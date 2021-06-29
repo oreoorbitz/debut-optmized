@@ -1,0 +1,8 @@
+development:
+  password: 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
+  theme_id: "120321769518"
+  store: orionsuperteststore.myshopify.com
+  ignore_files:
+    - "*.gif"
+    - "*.jpg"
+    - config/settings_data.json
