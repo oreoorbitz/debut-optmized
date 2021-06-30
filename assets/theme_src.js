@@ -157,23 +157,6 @@ window.slate = window.slate || {};
  */
 
 slate.utils = {
-  /**
-   * Get the query params in a Url
-   * Ex
-   * https://mysite.com/search?q=noodles&b
-   * getParameterByName('q') = "noodles"
-   * getParameterByName('b') = "" (empty value)
-   * getParameterByName('test') = null (absent)
-   */
-  getParameterByName: function(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-      results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-  },
 
   resizeSelects: function(selects) {
     selects.forEach(function(select) {
