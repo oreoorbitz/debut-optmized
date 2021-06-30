@@ -145,14 +145,14 @@ theme.Sections.prototype = Object.assign({}, theme.Sections.prototype, {
 });
 
 window.slate = window.slate || {};
-
-/**
+  
+/**  
  * Slate utilities
  * -----------------------------------------------------------------------------
  * A collection of useful utilities to help build your theme
  *
- *
- * @namespace utils
+ * 
+ * @namespace utils 
  */
 
 slate.utils = {
@@ -198,7 +198,7 @@ slate.utils = {
     RIGHTARROW: 39
   }
 };
-
+ 
 window.slate = window.slate || {};
 
 /**
